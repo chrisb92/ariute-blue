@@ -24,6 +24,7 @@ modules:
       - 1password.repo
     optfix:
       - 1Password
+      - zen
     install:
       - micro
       - starship
