@@ -6,7 +6,7 @@ name: ariute-blue
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bluefin-dx-hwe
+base-image: ghcr.io/ublue-os/bluefin-dx
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -24,11 +24,9 @@ modules:
       - 1password.repo
     optfix:
       - 1Password
-      - zen
     install:
       - micro
       - starship
-      - zen-browser
       - 1password
 
   - type: default-flatpaks
